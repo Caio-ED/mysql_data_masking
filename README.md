@@ -15,7 +15,7 @@ basta rodar o arquivo sql por completo para criar as funções, depois é so cha
         &nbsp;&nbsp;&nbsp;gen_tel() <br>
         &nbsp;&nbsp;&nbsp;gen_cep()<br>
         &nbsp;&nbsp;&nbsp;gen_date('19/09/2000','19/09/2022','%Y-%m-%d %h:%i:%s')<br> 
-        &nbsp;&nbsp;&nbsp;gen_time('00:00:00','23:59:59','%H:%i:%s')</p><br><br>
+        <blockquote>gen_time('00:00:00','23:59:59','%H:%i:%s')</blockquote></p><br><br>
         
 E quero dev mais, se tiver alguma sugestão ou quiser contrinbuir tmj!<br>
 
