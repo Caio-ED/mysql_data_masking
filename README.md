@@ -1,16 +1,16 @@
 # mysql_data_masking
 Funções para mascarar dados diretamente no MySQL<br>
-##parecido com o plug-in da versão enterprise que leva o mesmo nome.<br><br>
+<h2>parecido com o plug-in da versão enterprise que leva o mesmo nome.</h2><br><br>
 
-###basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.<br><br>
+<h3>basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.</h3><br><br>
 
-####Funções substituição caracteres:<br><p>
+<h4>Funções substituição caracteres:</h4><br><p>
         mask_inner(nome,4,2)<br>
         mask_outer(cep,0,3) <br>
         mask_email(email_cliente) <br>
         mask_tel(telefone,'$')</p><br><br>
         
-####Funções de dados Aleatórios: <br><p>
+<h4>Funções de dados Aleatórios:</h4><br><p>
         gen_range(1,100) <br>
         gen_decimal_range(1,100) <br>
         gen_tel() <br>
