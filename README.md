@@ -1,5 +1,5 @@
 # mysql_data_masking
-Funções para mascarar dados diretamente no MySQL,
+Funções para mascarar dados diretamente no MySQL<br>
 parecido com o plug-in da versão enterprise que leva o mesmo nome.
 
 basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.
