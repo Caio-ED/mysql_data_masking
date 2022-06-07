@@ -5,7 +5,7 @@ parecido com o plug-in da versão enterprise que leva o mesmo nome.<br><br>
 <h3>basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.</h3><br><br>
 
 <h4>Funções substituição caracteres:</h4><br>
-     <p>        mask_inner(nome,4,2)<br>
+     <p>&nbsp;&nbsp;&nbsp;mask_inner(nome,4,2)<br>
         mask_outer(cep,0,3) <br>
         mask_email(email_cliente) <br>
         mask_tel(telefone,'$')</p><br><br>
