@@ -10,12 +10,12 @@ basta rodar o arquivo sql por completo para criar as funções, depois é so cha
 * [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
         
 ##### Funções de dados Aleatórios:
-        * [Inteiro: --------- gen_range(1,100)]
-        * Decimal: --------- gen_decimal_range(1,100)
-        * Telefone: --------- gen_tel()
-        * CEP: --------- gen_cep()
-        * Data: --------- gen_date('19/09/2000','19/09/2022','%Y-%m-%d %h:%i:%s') 
-        * Horario: --------- gen_time('00:00:00','23:59:59','%H:%i:%s')
+* [Inteiro: --------- gen_range(1,100)]
+* Decimal: --------- gen_decimal_range(1,100)
+* Telefone: --------- gen_tel()
+* CEP: --------- gen_cep()
+* Data: --------- gen_date('19/09/2000','19/09/2022','%Y-%m-%d %h:%i:%s') 
+* Horario: --------- gen_time('00:00:00','23:59:59','%H:%i:%s')
         
  se tiver alguma sugestão ou quiser contribuir tmj!
 
