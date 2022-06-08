@@ -1,18 +1,11 @@
 # mysql_data_masking
-##### Índice 
+##### Funções substituição caracteres:
 
-* [Título e Imagem de capa](#Título-e-Imagem-de-capa)
-* [Badges](#badges)
-* [Índice](#índice)
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-Projeto)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
-* [Licença](#licença)
-* [Conclusão](#conclusão)
+* [mask_inner(coluna,4,2)](#Título-e-Imagem-de-capa)
+* [mask_outer(coluna,0,3)](#badges)
+* [mask_email(coluna_de_email)](#índice)
+* [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
+
 <h2>Funções para mascarar dados diretamente no MySQL</h2><br>
 parecido com o plug-in da versão enterprise que leva o mesmo nome.<br>
 basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.<br><br>
