@@ -1,15 +1,13 @@
 # mysql_data_masking
 ### Funções para mascarar dados diretamente no MySQL
+parecido com o plug-in da versão enterprise que leva o mesmo nome.<br>
+basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.<br><br>
 ##### Funções substituição caracteres:
 
 * [mask_inner(coluna,4,2)](#Título-e-Imagem-de-capa)
 * [mask_outer(coluna,0,3)](#badges)
 * [mask_email(coluna_de_email)](#índice)
 * [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
-
-
-parecido com o plug-in da versão enterprise que leva o mesmo nome.<br>
-basta rodar o arquivo sql por completo para criar as funções, depois é so chamar elas.<br><br>
 
 <h5>Funções substituição caracteres:</h4><br> <p>
          &nbsp;&nbsp;&nbsp;mask_inner(coluna,4,2)<br>
