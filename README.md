@@ -18,7 +18,9 @@ basta rodar o arquivo sql uma vez por completo para criar as funções, depois �
 * Data: ------------------------------ gen_date('19/09/2000','19/09/2022','%Y-%m-%d %h:%i:%s') 
 * Horario: --------------------------- gen_time('00:00:00','23:59:59','%H:%i:%s')
         
- se tiver alguma sugestão ou quiser contribuir tmj!
+ proximo passo que eu quero criar, é uma função que tras um valor aleatorio de uma lista. <br>
+ a forma que pensei de fazer isso seria, criar uma tabela temporaria com uma coluna de tipo JSON (mysql 5.7.8 acima), lêr o JSON importado, jogalo na tabela temporaria, e usando o gen_range(), trazer um dos indices aleatoriamente. <br>
+ Se tiver alguma sugestão e quiser contribuir tmj!
 
 
 
