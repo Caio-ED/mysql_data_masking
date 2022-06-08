@@ -10,7 +10,7 @@ basta rodar o arquivo sql por completo para criar as funções, depois é so cha
 * [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
         
 ##### Funções de dados Aleatórios:
-        * Inteiro: --------- gen_range(1,100)
+        * [Inteiro: --------- gen_range(1,100)]
         * Decimal: --------- gen_decimal_range(1,100)
         * Telefone: --------- gen_tel()
         * CEP: --------- gen_cep()
