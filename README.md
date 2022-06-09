@@ -35,6 +35,23 @@ mask_tel (coluna_de_tel,'$');
 ###### referencia para formatos de data: 
 * [https://mysqlcode.com/mysql-date_format/](https://mysqlcode.com/mysql-date_format/)
 
+### ❌ Desinstalação
+Para Desinstalar basta executar a query:
+```
+drop function mask_inner;
+drop function mask_outer;
+drop function mask_email;
+drop function mask_tel;
+drop function gen_int;
+drop function gen_decimal;
+drop function gen_tel;
+drop function gen_cep;
+drop function gen_date;
+drop function gen_time;
+drop function gen_char;
+drop function gen_string;
+```
+
 
 
 
