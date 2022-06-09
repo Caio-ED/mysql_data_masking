@@ -66,19 +66,19 @@
     
 -- Inteiro Aleatorio
     delimiter $$
-		create function gen_range(inicio int, limite int)
+		create function gen_int(inicio int, limite int)
         returns int
         begin
-			return(FLOOR(RAND() * (limite - inicio)) + inicio);
+			return(FLOOR(RAND() * (limite - inicio + 1)) + inicio);
         end $$
 	delimiter ;
     
 -- Decimal Aleatorio
     delimiter $$
-		create function gen_decimal_range(inicio int, limite int)
+		create function gen_decimal(inicio int, limite int)
         returns decimal(12,2)
         begin
-			return(RAND() * (limite - inicio) + inicio);
+			return(RAND() * (limite - inicio + 1) + inicio);
         end $$
 	delimiter ;
     
