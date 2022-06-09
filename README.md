@@ -36,7 +36,7 @@ mask_tel (coluna_de_tel,'$');
 * [https://mysqlcode.com/mysql-date_format/](https://mysqlcode.com/mysql-date_format/)
 
 ### ❌ Desinstalação
-Para Desinstalar basta executar a query:
+Para desinstalar basta executar a query:
 ```
 drop function mask_inner;
 drop function mask_outer;
