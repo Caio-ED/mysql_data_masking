@@ -2,7 +2,11 @@
 # mysql_data_masking
 ### Funções para mascarar dados diretamente no MySQL
 parecido com o plug-in da versão enterprise que leva o mesmo nome.<br>
-basta rodar o arquivo sql uma vez por completo para criar as funções, depois é so chamar elas.<br><br>
+
+### 🔧 Instalação
+basta rodar o arquivo sql uma vez por completo para criar as funções dentro do seu banco, depois é so chamar elas onde precisar.<br>
+Diga como essa etapa será:
+
 ##### Funções de Máscara:
 
 * [mask_inner(coluna,4,2)](#Título-e-Imagem-de-capa)
@@ -25,6 +29,7 @@ basta rodar o arquivo sql uma vez por completo para criar as funções, depois �
  Se tiver alguma sugestão e quiser contribuir tmj!
 ###### referencia para formatos de data: 
 * [https://mysqlcode.com/mysql-date_format/](https://mysqlcode.com/mysql-date_format/)
+
 
 
 
