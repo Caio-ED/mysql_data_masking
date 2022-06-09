@@ -13,6 +13,8 @@ basta rodar o arquivo sql uma vez por completo para criar as funções, depois �
 ##### Funções de dados Aleatórios:
 * Inteiro: --------------------------- gen_range(1,100)
 * Decimal: --------------------------- gen_decimal_range(1,100)
+* Caractere: ------------------------- gen_char('uln*')
+* String: ---------------------------- gen_string(10,'uln*')
 * Telefone: -------------------------- gen_tel()
 * CEP: ------------------------------- gen_cep()
 * Data: ------------------------------ gen_date('19/09/2000','19/09/2022','%Y-%m-%d %h:%i:%s') 
