@@ -63,7 +63,7 @@
             end if;
 		end $$
     delimiter ;
-    
+
 -- Inteiro Aleatorio
     delimiter $$
 		create function gen_int(inicio int, limite int)
@@ -122,7 +122,7 @@
         set ano_fim = right(dataf,4); set mes_fim = mid(dataf,4,2); set dia_fim = left(dataf,2);
 		set stamp_inicio = unix_timestamp(concat(ano_ini,'-',mes_ini,'-',dia_ini));
         set stamp_fim = unix_timestamp(concat(ano_fim,'-',mes_fim,'-',dia_fim));
-        set stamp_gerado = gen_range(stamp_inicio,stamp_fim);
+        set stamp_gerado = gen_int(stamp_inicio,stamp_fim);
         return(from_unixtime(stamp_gerado,formato));
     end $$
     delimiter ;
@@ -139,7 +139,7 @@
         set hora_fim = left(timef,2); set min_fim = mid(timef,4,2); set seg_fim = right(timef,2);
 		set stamp_inicio = unix_timestamp(concat('1970-01-01 ',hora_ini,':',min_ini,':',seg_ini));
         set stamp_fim = unix_timestamp(concat('1970-01-01 ',hora_fim,':',min_fim,':',seg_fim));
-        set stamp_gerado = gen_range(stamp_inicio,stamp_fim);
+        set stamp_gerado = gen_int(stamp_inicio,stamp_fim);
         return(from_unixtime(stamp_gerado, formato));
     end $$
     delimiter ;
@@ -162,7 +162,7 @@
             if instr(formato,'n') >= 1 then
 				set chars_possiveis = concat(chars_possiveis, '0123456789');
 			end if;
-       return (substring(chars_possiveis,rand()* char_length(chars_possiveis),1));
+       return (substring(chars_possiveis, gen_int(1,char_length(chars_possiveis)),1));
     end $$
     delimiter ;
     
