@@ -11,8 +11,8 @@ basta rodar o arquivo sql uma vez por completo para criar as funções, depois �
 * [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
         
 ##### Funções de dados Aleatórios:
-* Inteiro: --------------------------- gen_range(1,100)
-* Decimal: --------------------------- gen_decimal_range(1,100)
+* Inteiro: --------------------------- gen_int(1,100)
+* Decimal: --------------------------- gen_decimal(1,100)
 * Caractere: ------------------------- gen_char('uln*')
 * String: ---------------------------- gen_string(10,'uln*')
 * Telefone: -------------------------- gen_tel()
