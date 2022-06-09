@@ -143,3 +143,45 @@
         return(from_unixtime(stamp_gerado, formato));
     end $$
     delimiter ;
+    
+-- Letra aleatoria    
+    delimiter $$
+    create function gen_char(formato varchar(5))
+    returns char
+    begin
+		declare chars_possiveis text default '';
+			if instr(formato,'u') >= 1 then
+				set chars_possiveis = concat(chars_possiveis, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+            end if;    
+			if instr(formato,'l') >= 1 then
+				set chars_possiveis = concat(chars_possiveis, 'abcdefghijklmnopqrstuvwxyz');
+            end if;    
+			if instr(formato,'*') >= 1 then
+				set chars_possiveis = concat(chars_possiveis, '!@#$%&*+=');
+			end if;
+            if instr(formato,'n') >= 1 then
+				set chars_possiveis = concat(chars_possiveis, '0123456789');
+			end if;
+       return (substring(chars_possiveis,rand()* char_length(chars_possiveis),1));
+    end $$
+    delimiter ;
+    
+-- String Aleatoria
+	delimiter $$
+    create function gen_string(tamanho int,formato varchar(5))
+    returns varchar(100)
+    begin
+    DECLARE contador INT DEFAULT 0;	
+    declare palavra varchar(100) default '';
+    declare palavra2 varchar(100);
+	loops: LOOP
+		SET contador = contador + 1;
+        set palavra2 = concat(gen_char(formato), palavra);
+        set palavra = palavra2;
+		IF contador >= tamanho THEN
+			LEAVE loops;
+		END IF;
+	END LOOP loops;
+		return (palavra);
+    end $$
+    delimiter ;
