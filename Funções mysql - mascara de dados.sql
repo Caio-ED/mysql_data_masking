@@ -185,3 +185,46 @@
 		return (palavra);
     end $$
     delimiter ;
+    
+-- Tipo sanguineo aleatorio
+	delimiter $$
+	create function gen_tiposangue()
+		returns varchar(3)
+		begin
+			return(elt(ceiling(rand() * 8), 'A+','B+','AB+','O+','A-','B-','AB-','O-'));
+		end $$
+	delimiter ;
+
+-- Email aleatorio
+	delimiter $$
+	create function gen_email()
+		returns varchar(50)
+		begin
+			return(concat(gen_string(gen_int(6,20),'uln'),'@',elt(ceiling(rand() * 5) ,"gmail.com","hotmail.com","exemplo.com","yahoo.com","icloud.com")));
+		end $$
+	delimiter ;
+    
+-- Nome aleatorio
+	delimiter $$
+	create function gen_nome()
+		returns varchar(50)
+		begin
+			return(concat(elt(ceiling(rand() * 6), 'Fulano','Fulana','Cicrano','Cicrana','Beltrano','Beltrana'), ' ', gen_string(3,'un'), ' ',gen_string(3,'un')));
+		end $$
+	delimiter ;
+    
+-- Pega elemento aleatorio de uma lista separada por virgula
+	delimiter $$
+	create function gen_list(lista longtext)
+	returns longtext
+	begin
+		declare elemento_sorteado varchar(255);
+		declare qtd_elementos int;
+		declare n_sorteado int;
+		set qtd_elementos = LENGTH(TRIM(BOTH ',' FROM lista))- LENGTH(REPLACE(TRIM(BOTH ',' FROM lista), ',', '')) + 1;
+		set n_sorteado = gen_int(1,qtd_elementos);
+		set elemento_sorteado = SUBSTRING_INDEX(SUBSTRING_INDEX(lista,',',n_sorteado),',',-1);
+		return(elemento_sorteado);
+	end $$
+	delimiter ;;
+	select gen_list('RO,AC,AM,RR,PA,AP,TO,MA,PI,CE,RN,PB,PE,AL,SE,BA,MG,ES,RJ,SP,PR,SC,RS,MS,MT,GO,DF') as uf;
