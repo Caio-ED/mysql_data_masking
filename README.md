@@ -7,7 +7,7 @@ parecido com o plug-in da versão enterprise que leva o mesmo nome.<br>
 basta rodar o arquivo sql uma vez por completo para criar as funções dentro do seu banco, depois é so chamar elas onde precisar.<br>
 Diga como essa etapa será:
 
-## 📦 Recursos
+### 📦 Recursos
 ##### Funções de Máscara:
 
 * [mask_inner(coluna,4,2)](#Título-e-Imagem-de-capa)
