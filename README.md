@@ -21,6 +21,8 @@ basta rodar o arquivo sql uma vez por completo para criar as funções, depois �
  proximo passo que eu quero criar, é uma função que tras um valor aleatorio de uma lista. <br>
  a forma que pensei de fazer isso seria, criar uma tabela temporaria com uma coluna de tipo JSON (mysql 5.7.8 acima), lêr o JSON importado, jogalo na tabela temporaria, e usando o gen_range(), trazer um dos indices aleatoriamente. <br>
  Se tiver alguma sugestão e quiser contribuir tmj!
+###### referencia para formatos de data: 
+* [https://mysqlcode.com/mysql-date_format/](https://mysqlcode.com/mysql-date_format/)
 
 
 
