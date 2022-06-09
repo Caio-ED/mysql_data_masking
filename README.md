@@ -10,11 +10,15 @@ Diga como essa etapa será:
 ### 📦 Recursos
 ##### Funções de Máscara:
 ```
-* [mask_inner(coluna,4,2)]              (#Título-e-Imagem-de-capa)
+mask_inner(coluna,4,2)
+mask_outer(coluna,0,3)
+mask_email(coluna_de_email)
+mask_tel(coluna_de_tel,'$')
+```
+* [mask_inner(coluna,4,2)](#Título-e-Imagem-de-capa)
 * [mask_outer(coluna,0,3)](#badges)
 * [mask_email(coluna_de_email)](#índice)
 * [mask_tel(coluna_de_tel,'$')](#descrição-do-projeto)
-```        
 ##### Funções de dados Aleatórios:
 * Inteiro: --------------------------- gen_int(1,100)
 * Decimal: --------------------------- gen_decimal(1,100)
